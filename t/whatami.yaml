@@ -1,0 +1,7 @@
+# FIXME: each host gets one in /root/whatami.txt?
+contact: Philip Durbin
+primary: server
+url: http://git.greptilian.com
+whatido: serve git repos
+whereiam: the cloud
+hostname: git.greptilian.com

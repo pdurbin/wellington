@@ -1,0 +1,9 @@
+db1:
+  last_kvm_host: gfs05
+  last_seen_running: Wed Oct 26 16:45:58 EDT 2011
+fs1:
+  last_kvm_host: gfs06
+  last_seen_running: Wed Oct 26 16:45:58 EDT 2011
+mx1:
+  last_kvm_host: gfs04
+  last_seen_running: Wed Oct 26 16:45:58 EDT 2011

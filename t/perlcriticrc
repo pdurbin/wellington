@@ -1,0 +1,30 @@
+#severity = gentle
+#severity = stern
+#severity = harsh
+#severity = cruel
+severity = brutal
+verbose  = 11
+
+# using git
+[-Miscellanea::RequireRcsKeywords]
+
+# FIXME: should I enable this?
+[-Modules::RequireVersionVar]
+
+# nothing wrong with "usage() unless @ARGV"
+[-ControlStructures::ProhibitPostfixControls]
+
+# ignore these, for now anyway
+#[-Documentation::RequirePodSections]
+#[-Documentation::RequirePodAtEnd]
+
+# override default function list: open close print
+# Why?  Because otherwise even a simple print 'yo' gives you:
+#Return value of flagged function ignored - print at line 4, near 'print 'yo';'.
+#  InputOutput::RequireCheckedSyscalls (Severity: 1)
+# See also "Testing print failures" by nadim khemir on Jan. 5, 2008 at
+# http://comments.gmane.org/gmane.comp.lang.perl.quality-assurance/8665
+[InputOutput::RequireCheckedSyscalls]
+exclude_functions = print
+
+[-ValuesAndExpressions::ProhibitEmptyQuotes]

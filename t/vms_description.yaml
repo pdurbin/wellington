@@ -1,0 +1,6 @@
+mx1:
+  description: primary mail gateway
+db1:
+  description: database server
+fs1:
+  description: file server 
